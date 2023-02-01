@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player" id="audio">
+      <div class="player-controls-text">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <p class="current-audio">CurrentAudio</p>
+      </div>
+      <div class="player-bars">
+        <input class="player-progress-bar" type="range" name="" id="" min="0" max="100" value="0">
+        <button class="player-volume-btn"></button>
+        <input class="player-volume" type="range" name="" id="" min="0" max="1" step="0.1" value="1">
+      </div>
+      <ul class="play-list"></ul>
+      <p class="player-progress"></p>
+    </div>
+
+    <div class="weather" id="weather">
+      <input class="city" type="text" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <!-- /header -->
+
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time" id="time"></time>
+    <date class="date" id="date"></date>
+    <div class="greeting-container" id="greeting">
+      <span class="greeting"></span>
+      <input class="name" type="text" />
+    </div>
+  </main>
+  <!-- /main -->
+
+  <footer class="footer">
+    <div class="block-settings">
+      <div class="settings-menu">
+        <div class="settings-controls">
+          <label for="language"></label>
+          <select class="language-select" name="language" id="language">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+          </select>
+          <label for="source"></label>
+          <select class="source-select" name="source" id="source">
+            <option value="github">Source</option>
+            <option value="unsplash">Unsplash</option>
+            <option value="flickr">Flickr</option>
+          </select>
+          <label for="tags"></label>
+          <input class="tags-input" type="text" id="tags" placeholder="comma-separated tags">
+        </div>
+        <ul class="blocks-list">
+          <li class="blocks-item">
+            <button class="blocks-btn blocks-btn-time">time</button>
+          </li>
+          <li class="blocks-item">
+            <button class="blocks-btn blocks-btn-date">date</button>
+          </li>
+          <li class="blocks-item">
+            <button class="blocks-btn blocks-btn-greeting">greeting</button>
+          </li>
+          <li class="blocks-item">
+            <button class="blocks-btn blocks-btn-quote">quote</button>
+          </li>
+          <li class="blocks-item">
+            <button class="blocks-btn blocks-btn-weather">weather</button>
+          </li>
+          <li class="blocks-item">
+            <button class="blocks-btn blocks-btn-audio">audio</button>
+          </li>
+          <li class="blocks-item">
+            <button class="blocks-btn blocks-btn-todolist">todolist</button>
+          </li>
+        </ul>
+      </div>
+      <button class="settings-btn"></button>
+    </div>
+    <div class="block-quote" id="quote">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="block-todolist" id="todolist">
+      <button class="todolist-btn"></button>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- scripts -->
+  <script type="module" src="js/datetime_greeting.js"></script>
+  <script type="module" src="js/img_slider.js"></script>
+  <script type="module" src="js/name.js"></script>
+  <script type="module" src="js/weather.js"></script>
+  <script type="module" src="js/quotes.js"></script>
+  <script type="module" src="js/audio_player.js"></script>
+  <script type="module" src="js/settings.js"></script>
+  <!-- end scripts -->
+</body>
+
+</html>

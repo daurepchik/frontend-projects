@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="description">
+      <p>Добавил кнопки нахождения подкорня, степени и замену знака</p>
+      <ul>
+        <li>
+          <p class="name">Подкорень:</p>
+          <ul>
+            <li>
+              <p>Сначала вводите число, потом нажимаете на кнопку подкорня. Готово</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="name">Степень</p>
+          <ul>
+            <li>
+              <p>* Сначала вводите первое число, <br>
+                * нажимаете кнопку степени, <br>
+                * потом на второе число, <br>
+                * потом на равно, или на другой операнд. Готово</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="name">Замена знака:</p>
+          <ul>
+            <li>
+              <p>Вводите число, нажимаете на замену знака. Готово</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+    </div>
+    <div class="calculator">
+      <div class="calculator-grid">
+        <div class="output">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear>AC</button>
+        <button data-delete>DEL</button>
+        <button data-sqrt>&#8730;</button>
+        <button data-power>x<sup style="font-size: 60%;">y</sup></button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>÷</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>*</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>+</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals>=</button>
+        <button data-operation>-</button>
+        <button data-sign>+/-</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

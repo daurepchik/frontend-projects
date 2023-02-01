@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="wrapper">
+        <div class="logo logo-header">
+          <img src="./assets/icons/logo1.svg" alt="logo">
+          <div class="logo-text"><span>WILDLIFE</span></div>
+        </div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="#" onclick="return false" class="menu-list-item-link underline">Blog</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#" onclick="return false" class="menu-list-item-link underline">Contacts</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="loopa" href="#" onclick="return false" class="menu-list-item-link"><img
+                  src="./assets/icons/loopa.svg" alt="search"></a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#" onclick="return false" class="menu-list-item-link button">Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.wrapper -->
+    </header>
+    <!-- /header -->
+
+    <main>
+      <section class="section1">
+        <div class="wrapper">
+          <div class="section1-text">
+            <h1>Survival</h1>
+            <p>What this means is that we exist to help protect our environment and do in numbers of ways. You can save
+              the planet by donation.</p>
+            <a href="#" onclick="return false" class="button section1-button">Donate</a>
+          </div>
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <!-- /.section1 -->
+
+      <section class="section2">
+        <div class="wrapper">
+          <div class="section2-title">
+            <h2>Latest articles</h2>
+            <p class="sh-2">Breaking news from the wild</p>
+          </div>
+
+          <div class="section2-slider-container">
+            <div class="arrow arrow-left"></div>
+            <div class="section2-slider">
+              <div class="section2-slider-card">
+                <h4>Deer</h4>
+                <p>Naturalist investigation</p>
+              </div>
+              <div class="section2-slider-card">
+                <h4>Squirrel</h4>
+                <p>Kamikaze squirrels</p>
+              </div>
+              <div class="section2-slider-card">
+                <h4>Bird</h4>
+                <p>Birds Fight club</p>
+              </div>
+            </div>
+            <div class="arrow arrow-right"> </div>
+          </div>
+
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <!-- /.section2 -->
+
+      <div class="section3">
+        <div class="wrapper">
+          <div class="section3-email-form-container">
+            <div class="section3-email-form-text">
+              <h3>Get notified about new amazing articles</h3>
+            </div>
+            <div class="section3-email-form">
+              <form action="#">
+                <input class="email" type="email" placeholder="Email">
+                <input id="button" class="button" type="submit" value="Send">
+              </form>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.wrapper -->
+      </div>
+      <!-- /.section3 -->
+    </main>
+    <!-- /main -->
+
+    <footer>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="assets/icons/logo1.svg" alt="logo">
+          <div class="logo-text"><span>WILDLIFE</span></div>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a class="underline" href="#" onclick="return false">Articles</a></li>
+            <li><a class="underline" href="#" onclick="return false">About us</a></li>
+            <li><a class="underline" href="#" onclick="return false">Learn more</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a class="footer-link facebook" href="#" onclick="return false"></a>
+            </li>
+            <li>
+              <a class="footer-link instagram" href="#" onclick="return false"></a>
+            </li>
+            <li>
+              <a class="footer-link pinterest" href="#" onclick="return false"></a>
+            </li>
+            <li>
+              <a class="footer-link telegram" href="#" onclick="return false"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.wrapper -->
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <!-- /.container -->
+
+  <script>
+    let button = document.querySelector('#button');
+    let logos = document.querySelectorAll('.logo');
+    for (let logo of logos) {
+      logo.onclick = () => window.open("#", "_self");
+    }
+    button.onclick = () => button.style.backgroundColor == "black";
+  </script>
+</body>
+
+</html>
