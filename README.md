@@ -33,7 +33,7 @@
 
     > -> [Project Requirements](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/museum/museum.md)
 
-- [Shelter](https://daurepchik.github.io/frontend-projects/shelter)  
+- [Shelter](https://daurepchik.github.io/frontend-projects/shelter/pages/main)  
     > Shelter is a project in which I had to design a site consisting of two pages, make it adaptive and interactive.  
     > * The project is Adaptive and Interactive   
     
